@@ -3,6 +3,7 @@ package com.diploma.DPAR.security;
 import com.diploma.DPAR.domain.User;
 import com.diploma.DPAR.security.jwt.JwtUser;
 import com.diploma.DPAR.security.jwt.JwtUserFactory;
+import com.diploma.DPAR.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
