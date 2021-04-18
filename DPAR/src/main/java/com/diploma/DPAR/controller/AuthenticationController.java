@@ -6,6 +6,7 @@ import com.diploma.DPAR.domain.User;
 import com.diploma.DPAR.security.jwt.AccessToken;
 import com.diploma.DPAR.security.jwt.JwtAuthenticationException;
 import com.diploma.DPAR.security.jwt.JwtTokenProvider;
+import com.diploma.DPAR.service.JwtRefreshTokenService;
 import com.diploma.DPAR.service.UserService;
 import com.diploma.DPAR.service.dto.AuthenticationRequestDTO;
 import com.diploma.DPAR.service.dto.RefreshTokenDTO;
@@ -17,9 +18,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.web.bind.annotation.*;
 
